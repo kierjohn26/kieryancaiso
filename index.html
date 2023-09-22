@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p,
+        h3 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(9, 11vh);
+            gap: 10px;
+        }
+
+        .navbar {
+            grid-column: 1/13;
+            grid-row: 1/2;
+            padding: 5px;
+        }
+
+        .footer {
+            grid-column: 1/13;
+            grid-row: 9/10;
+        }
+
+        .item1{
+            background-color: aquamarine;
+        }
+        .item2{
+            background-color: blueviolet;
+        }
+        .item3{
+            background-color: pink;
+        }
+        .sidebar {
+            background-color: rgb(255, 127, 227);
+        }
+
+        .navbar {
+            background-color: blueviolet;
+        }
+
+        .footer {
+            background-color: rgb(137, 137, 201);
+        }
+
+        .main {
+            background-color: white;
+            background-image:url(https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/370188571_277524558378425_1119676313948233328_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1b51e3&_nc_eui2=AeFF7GrBxCt00brJ50oECEbffjDFBz_-n21-MMUHP_6fbXhXOM4IKFGcerW0CNA5AngPZ4sPEwHFJq9ZJImHI4bg&_nc_ohc=AKCODXABlvcAX-e_N8P&_nc_ht=scontent.fceb1-3.fna&oh=00_AfCtsq3gIcQ-Pr5_kwdJSgcRZi7FudXibV_yiIVX4lt9Cg&oe=6512F12D)
+
+            
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 768px) {
+            .item1{
+                grid-column: 1/13;
+                grid: 2/3;
+            }
+            .item2{
+                grid-column: 1/13;
+                grid-row: 3/4;
+            }
+            .item3{
+                grid-column: 1/13;
+                grid-row: 4/5;
+            }
+            
+            .sidebar{
+                grid-column: 1/13;
+                grid-row: 8/9;
+            }
+            .main{
+                grid-column: 1/13;
+                grid-row: 6/8;
+                
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .item1 {
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+
+            .item2 {
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+
+            .item3 {
+                grid-column: 1/3;
+                grid-row: 4/5;
+            }
+
+            .main {
+                grid-column: 3/13;
+                grid-row: 2/8;
+            }
+
+            .sidebar {
+                grid-column: 1/13;
+                grid-row: 8/9;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .item1 {
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+
+            .item2 {
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+
+            .item3 {
+                grid-column: 1/3;
+                grid-row: 4/5;
+            }
+
+            .sidebar {
+                grid-column: 11/13;
+                grid-row: 2/9;
+                gap: 5px;
+            }
+
+            .main {
+                grid-column: 3/11;
+                grid-row: 2/9;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h3>Name: Kier John N. Caiso</h3>
+        </div>
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+
+        <div class="main">
+           <center><h2>Goals</h2></center>
+           <!--break line-->
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <p>My goal in life is to become successful someday. So that, I can help my parents and bring them from the poverty situation. But for now, I will strive hard no matter what happen. I know there has a circumstances that
+                that we facing right now, but always believe that there has a silver lining. </p>
+            
+        </div>
+
+        <div class="sidebar">
+            <center><h1>Educational Background</h1></center>
+            <h3>Elementary:</h3>
+            <p> Noac Elementary School</p>
+            <h3>High School:</h3>
+            <p>Florentino Galang Senior National High School</p>
+            <h3>College:</h3>
+            <P>Central Philippine State University</P>
+        </div>
+
+        <div class="footer">
+            <center><h5>Birthdate: August 26, 2000</h5></center>
+        </div>
+        <div class="item1">
+            <h5>Skills: Flexible</h5>
+        </div>
+        <div class="item2">
+            <h5>Hobbies: Playing Volleyball, Dancing and Singing</h5>
+        </div>
+    <div class="item3">
+        <h5>Age: 23 years old</h5>
+    </div>
+</body>
+</html>
